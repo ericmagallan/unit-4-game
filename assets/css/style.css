@@ -2,3 +2,18 @@
 display-4 {
     color: aquamarine;
 }
+
+i.fas,
+  i.fab {
+    border: 1px solid red;
+  }
+
+  body {
+    /* background-image: url(); */
+    background-color: #e4e4e4;
+   }
+
+   .card {
+margin-bottom: 20px;
+
+   }

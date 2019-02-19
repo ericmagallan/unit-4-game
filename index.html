@@ -1,4 +1,5 @@
-<!-- This is where my html will live. It will contain the structure of the game itself -->
+<!-- This is where my html will live. It will contain the structure of the game page itself -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +10,19 @@
     <title>Crystal Collector</title>
 
 
-
-    <!-- CSS Style Sheet -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Reset Style Sheet -->
+    <link rel="reset" href="./assets/css/reset.css">
 
     <!-- Bootstrap Styling CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
 
@@ -27,13 +33,11 @@
         <div class="jumbotron" style="background-color: purple; color: white">
             <div class="container">
                 <h1 class="display-4 text-center">Crystal Collector</h1>
-                <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of
+                    its parent.
                 </p>
             </div>
         </div>
-
-
-        <!-- This is the body of the game -->
 
         <!-- This is the Instructions Panel -->
         <div class="row">
@@ -62,65 +66,86 @@
             </div>
         </div>
 
-        <!-- Scores and Options -->
+        <!-- This is the Scores panel -->
         <div class="row text-center">
-                <div class="col-md-6">
-                        <div class="card">
-                            <h5 class="card-header text-center">Target Score</h5>
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>100</strong></h5>
-                                
-                            </div>
-                        </div>
-                    </div>
-
             <div class="col-md-6">
-                    <div class="card">
-                        <h5 class="card-header text-center">Your Score</h5>
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>0</strong></h5>
-                            
-                        </div>
+                <div class="card">
+                    <h5 class="card-header text-center">Target Score</h5>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>100</strong></h5>
+
                     </div>
                 </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header text-center">Your Score</h5>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>0</strong></h5>
+
+                    </div>
+                </div>
+            </div>
 
             <div class="col-md-12">
                 <div class="card">
                     <h5 class="card-header text-center">Crystal Options</h5>
                     <div class="card-body">
                         <div class="card-title text-center">
-                            <img src="assets/images/crystal/amethyst_mini.png" alt="Amethyst">
-                            <img src="assets/images/crystal/fluorite_mini.png" alt="Flourite">
-                            <img src="assets/images/crystal/aquamarine_mini.png" alt="Aquamarine">
-                            <img src="assets/images/crystal/Chalcanthite_mini.png" alt="Chalcanthite">
+                            <img src="assets/images/crystal/amethyst_mini.png" alt="Amethyst" id="amethyst">
+                            <img src="assets/images/crystal/fluorite_mini.png" alt="Flourite" id="flourite">
+                            <img src="assets/images/crystal/aquamarine_mini.png" alt="Aquamarine" id="aquamarine">
+                            <img src="assets/images/crystal/Chalcanthite_mini.png" alt="Chalcanthite" id="chalcanthite">
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Wins and Losses -->
+        <!-- This is the Wins and Losses panel -->
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
                     <h5 class="card-header text-center">Wins</h5>
                     <div class="card-body">
                         <h5 class="card-title text-center"><strong>0</strong></h5>
-                        
+
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-            <div class="card">
-                <h5 class="card-header text-center">Losses</h5>
-                <div class="card-body">
-                    <h5 class="card-title text-center"><strong>0</strong></h5>
-                    
+                <div class="card">
+                    <h5 class="card-header text-center">Losses</h5>
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><strong>0</strong></h5>
+
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
+
+        <!-- This is the footer section -->
+
+        <div class="card text-center">
+            <div class="card-header" style="background-color: purple; color: white">
+                Thanks for visiting. Check out the rest of my work in my portfolio.
+            </div>
+            <div class="card-body">
+                <a href="https://github.com/ericmagallan" class="btn btn-primary fab fa-github-square" i
+                    class="fab fa-7x px"></i></i> Github Portfolio</a>
+            </div>
+            <i class="fab fa-github-square"></i>
+
+
+        </div>
+
+
+
+    </div>
+
+
     </div>
 
 

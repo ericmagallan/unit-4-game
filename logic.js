@@ -58,17 +58,17 @@ var startGame = function() {
 
 //Main Process
 $("#amethyst").click(function() {
-    alert("test");
+    alert("This is Amethyst");
 });
 
 $("#fluorite").click(function() {
-    alert("test");
+    alert("This is Flourite");
 });
 
 $("#aquamarine").click(function() {
-   alert("test"); 
+   alert("This is Aquamarine"); 
 });
 
-$("#chalanthite").click(function() {
-    alert("test");
+$("#chalcanthite").click(function() {
+    alert("This is Chalcanthite");
 });

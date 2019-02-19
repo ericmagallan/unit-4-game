@@ -9,7 +9,12 @@ This is a crystal collector game that allows the player to select the crystals t
 ---
 
 **Technology Used**
-I'll be adding a more dynamic UI with shiny crystal animations for a more exciting and visually appealing gameplay.
+* HTML
+* CSS
+* Javascript
+* jQuery
+* Bootstrap
+* Fontawesome
 
 ---
 

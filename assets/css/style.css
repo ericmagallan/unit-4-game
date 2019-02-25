@@ -1,4 +1,6 @@
 /* This is where my css will live. It will call to the index.html page to style specific elements. */
+@import url('https://fonts.googleapis.com/css?family=Roboto: 400,700');
+
 display-4 {
     color: aquamarine;
 }
@@ -7,6 +9,11 @@ i.fas,
   i.fab {
     border: 1px solid red;
   }
+
+body, html {
+  font-family: 'Roboto';
+  margin: 0;
+}
 
   body {
     /* background-image: url(); */
@@ -17,3 +24,22 @@ i.fas,
 margin-bottom: 20px;
 
    }
+
+   /* Animation Effects */
+/* Grow */
+/* .hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+} */

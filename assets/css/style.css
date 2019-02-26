@@ -16,7 +16,7 @@ body, html {
 }
 
   body {
-    /* background-image: url(); */
+    background-image: url('assets\images\crystal\polygon_07.png');
     background-color: #e4e4e4;
    }
 
@@ -24,6 +24,11 @@ body, html {
 margin-bottom: 20px;
 
    }
+
+   .grow { transition: all .05s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+ 
 
    /* Animation Effects */
 /* Grow */

@@ -26,7 +26,7 @@ var crystal = {
         name: "amethyst",
         value: 0
     },
-    fluorite: 
+    fluorite:
     {
         name: "flourite",
         value: 0
@@ -52,23 +52,47 @@ var wins = 0;
 var losses = 0;
 
 //Functions
-var startGame = function() {
 
+var getRandom = function (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var startGame = function () {
+
+    // Reset the current score
+    var currentScore = 0;
+
+    // Set a new target score (Between 19-120)
+    targetScore = getRandom(19, 120);
+
+    targetScore = math.floor(Math.random() * (120 - 19 + 1)) + 19;
+    // Set different values for each of the crystals (between 1 and 12)
+    crystal.amethyst.value = getRandom(1, 12);
+    crystal.fluorite.value = getRandom(1, 12);
+    crystal.aquamarine.value = getRandom(1, 12);
+    crystal.chalanthite.value = getRandom(1, 12);
+
+    // Change HTML to reflect all of the changes
 };
 
+//Testing Area
+console.log("Does this actually work?");
+
 //Main Process
-$("#amethyst").click(function() {
+startGame();
+
+$("#amethyst").click(function () {
     alert("This is Amethyst");
 });
 
-$("#fluorite").click(function() {
+$("#fluorite").click(function () {
     alert("This is Flourite");
 });
 
-$("#aquamarine").click(function() {
-   alert("This is Aquamarine"); 
+$("#aquamarine").click(function () {
+    alert("This is Aquamarine");
 });
 
-$("#chalcanthite").click(function() {
+$("#chalcanthite").click(function () {
     alert("This is Chalcanthite");
 });

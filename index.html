@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -71,7 +74,7 @@
                 <div class="card">
                     <h5 class="card-header text-center">Target Score</h5>
                     <div class="card-body">
-                        <h5 class="card-title"><strong>100</strong></h5>
+                        <h5 class="card-title"><strong></strong></h5>
 
                     </div>
                 </div>
@@ -81,7 +84,7 @@
                 <div class="card">
                     <h5 class="card-header text-center">Your Score</h5>
                     <div class="card-body">
-                        <h5 class="card-title"><strong>0</strong></h5>
+                        <h5 class="card-title"><strong></strong></h5>
 
                     </div>
                 </div>
@@ -92,15 +95,44 @@
                     <h5 class="card-header text-center">Crystal Options</h5>
                     <div class="card-body">
                         <div class="card-title text-center">
-                            <img src="assets/images/crystal/amethyst_mini.png" class="grow" alt="Amethyst" id="amethyst"
-                                data-toggle="Amethyst" title="Amethyst"></a>
-                            <img src="assets/images/crystal/fluorite_mini.png" class="grow" alt="Fluorite" id="fluorite"
-                                data-toggle="Fluorite" title="Fluorite">
-                            <img src="assets/images/crystal/aquamarine_mini.png" class="grow" alt="Aquamarine"
-                                id="aquamarine" data-toggle="Aquamarine" title="Aquamarine">
-                            <img src="assets/images/crystal/Chalcanthite_mini.png" class="grow" alt="Chalcanthite"
-                                id="chalcanthite" data-toggle="Chalcanthite" title="Chalcanthite">
+
+                            <!-- This is the audio link for on button click -->
+                            <audio id="myAudio">
+                                <source src="../unit-4-game/assets/audio/Cash Bonus Whoosh.wav" type="audio/ogg">
+                                <source src="horse.mp3" type="audio/mpeg">
+                            </audio>
+
+                            <img src="assets/images/crystal/amethyst_mini.png" onclick="playAudio()" class="rocks"
+                                alt="Amethyst" id="amethyst" data-toggle="Amethyst" title="Amethyst"></a>
+                            <img src="assets/images/crystal/fluorite_mini.png" onclick="playAudio()" class="rocks"
+                                alt="Fluorite" id="fluorite" data-toggle="Fluorite" title="Fluorite">
+                            <img src="assets/images/crystal/aquamarine_mini.png" onclick="playAudio()" class="rocks"
+                                alt="Aquamarine" id="aquamarine" data-toggle="Aquamarine" title="Aquamarine">
+                            <img src="assets/images/crystal/Chalcanthite_mini.png" onclick="playAudio()" class="rocks"
+                                alt="Chalcanthite" id="chalcanthite" data-toggle="Chalcanthite" title="Chalcanthite">
                         </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- This is the Wins and Losses panel -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header text-center">Wins</h5>
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><strong>0</strong></h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header text-center">Losses</h5>
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><strong>0</strong></h5>
 
                     </div>
                 </div>
@@ -108,27 +140,10 @@
         </div>
     </div>
 
-    <!-- This is the Wins and Losses panel -->
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card">
-                <h5 class="card-header text-center">Wins</h5>
-                <div class="card-body">
-                    <h5 class="card-title text-center"><strong>0</strong></h5>
 
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card">
-                <h5 class="card-header text-center">Losses</h5>
-                <div class="card-body">
-                    <h5 class="card-title text-center"><strong>0</strong></h5>
 
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 
     <!-- This is the footer section -->
 
@@ -148,8 +163,20 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-    <!-- This is the javascript link -->
+    <!-- This is the audio script link -->
+    <script>
+        var x = document.getElementById("myAudio");
+        function playAudio() {
+            x.play();
+        }
+        function pauseAudio() {
+            x.pause();
+        } 
+    </script>
+
+    <!-- This is the logic.js javascript link -->
     <script src="logic.js"></script>
+
 </body>
 
 </html>

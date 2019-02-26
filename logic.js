@@ -52,11 +52,11 @@ var wins = 0;
 var losses = 0;
 
 //Functions
-
 var getRandom = function (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// Starts and stops the game
 var startGame = function () {
 
     // Reset the current score
@@ -64,8 +64,8 @@ var startGame = function () {
 
     // Set a new target score (Between 19-120)
     targetScore = getRandom(19, 120);
+    
 
-    targetScore = math.floor(Math.random() * (120 - 19 + 1)) + 19;
     // Set different values for each of the crystals (between 1 and 12)
     crystal.amethyst.value = getRandom(1, 12);
     crystal.fluorite.value = getRandom(1, 12);
@@ -73,10 +73,12 @@ var startGame = function () {
     crystal.chalanthite.value = getRandom(1, 12);
 
     // Change HTML to reflect all of the changes
-};
+$("#yourScore").html(currentScore);
+$("#targetScore").html(targetScore);
+}
 
-//Testing Area
-console.log("Does this actually work?");
+// This is whe response to the clicks on the crystals
+var addValues = function(crystal)
 
 //Main Process
 startGame();

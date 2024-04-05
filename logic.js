@@ -24,22 +24,22 @@ var crystal = {
     amethyst:
     {
         name: "amethyst",
-        value: 0
+        value: 5
     },
     fluorite:
     {
         name: "flourite",
-        value: 0
+        value: 15
     },
     aquamarine:
     {
         name: "aquamarine",
-        value: 0
+        value: 3
     },
     chalanthite:
     {
         name: "chalanthite",
-        value: 0
+        value: 1
     },
 }
 
